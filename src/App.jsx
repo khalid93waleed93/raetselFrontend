@@ -64,7 +64,7 @@ function App() {
     };
 
     try {
-      const response = await fetch('http://localhost:8080/puzzles', {
+      const response = await fetch('http://localhost:8081/puzzles', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

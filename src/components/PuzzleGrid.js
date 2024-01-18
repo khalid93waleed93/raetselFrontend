@@ -15,22 +15,20 @@ function PuzzleGrid({ puzzleGrid, toggleCellState, puzzleArray, solutionWord }) 
 				</div>
 			))}
 		</div>
-		<div>
 		{puzzleArray instanceof Array ?
-			<div className="puzzle-grid">
-				{puzzleArray.map((rowString, rowIndex) => (
-					<div key={rowIndex} className="grid-row">
-						{rowString.split('').map((cellChar, colIndex) => (
-							<div key={colIndex} className="grid-cell">
-								{cellChar}
-							</div>
-						))}
-					</div>
-				))}
-				<h1>Die Lösungswort ist: <span>{solutionWord}</span></h1>
-			</div>
+			<><div className="puzzle-grid">
+				  {puzzleArray.map((rowString, rowIndex) => (
+					  <div key={rowIndex} className="grid-row">
+						  {rowString.split('').map((cellChar, colIndex) => (
+							  <div key={colIndex} className="grid-cell">
+								  {cellChar}
+							  </div>
+						  ))}
+					  </div>
+				  ))}
+			  </div><h1>Die Lösungswort ist: <span>{solutionWord}</span></h1></>
 		 : null}
-		</div></>
+		</>
   );
 }
 
