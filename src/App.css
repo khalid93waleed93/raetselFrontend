@@ -1,0 +1,130 @@
+/*Allgemeine Stile */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.solution {
+  background-color: green;
+}
+
+.block {
+  background-color: black;
+}
+
+td {
+  cursor: pointer;
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+form {
+  margin: auto;
+  max-width: 300px;
+  padding: 15px;
+}
+
+form input[type="number"],
+form input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+form button:hover {
+  opacity: 0.8;
+}
+
+
+
+/* Zusätzliche Stile können hier hinzugefügt werden */
+/* Allgemeiner Stil für die App */
+.app-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Stil für das Formular */
+.puzzle-form {
+  margin-bottom: 20px;
+}
+
+.puzzle-form input[type="number"],
+.puzzle-form input[type="text"] {
+  margin-right: 10px;
+}
+
+/* Stil für das Gitter */
+.puzzle-grid {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.grid-row {
+  display: flex;
+}
+
+.grid-cell {
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.grid-cell.selectedSolution {
+  background-color: green;
+}
+
+.grid-cell.selectedBlock {
+  background-color: black;
+}
+
+/* Stil für den Lade-Indikator */
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
